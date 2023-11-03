@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTK/PTK keresés</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <h1>Törvénykönyv kereső</h1>
+        <form action="search.php" method="post" autocomplete="off">
+            <select name="tk" id="tk" required>
+                <option value="btk">BTK</option>
+                <option value="ptk">PTK</option>
+            </select>
+            <input type="text" name="num" id="num" spellcheck="off" required placeholder="§">
+            <input type="submit" value="Keresés">
+        </form>
+    </div>
+</body>
+
+</html>
